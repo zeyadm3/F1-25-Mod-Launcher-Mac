@@ -58,8 +58,38 @@ On Windows, F1 25 livery mods are installed with **SERPs Launcher**. It copies t
 ## Requirements
 
 - A Mac with **macOS 14 Sonoma or newer** (Apple Silicon or Intel)
-- **F1 25 already installed and playable through Steam in a CrossOver bottle**
+- **F1 25 installed through Steam in a CrossOver bottle.** See [Getting F1 25 running in CrossOver](#getting-f1-25-running-in-crossover) below.
 - Mods made for SERPs Launcher, and usually the free **[SERPs Base Files for F1 25](https://www.overtake.gg/downloads/serps-base-files-for-f1-25-simplified-erps-serps-use-to-play-f1-25-with-serps-compatible-mods.77448/)**
+
+## Getting F1 25 running in CrossOver
+
+Set this up once, before using the launcher. "The F1 25 folder" means the game's folder inside your bottle: `…/drive_c/Program Files (x86)/Steam/steamapps/common/F1 25`.
+
+1. **Anti-cheat**
+
+   {anti cheat part}
+
+2. **Stop the videos from freezing the game.** In the F1 25 folder, rename the `videos` folder to `videos_backup`.
+3. **Steam settings.**
+   - Open CrossOver and start Steam.
+   - In Steam's top menu, choose **Steam ▸ Go Offline**.
+   - Right-click **F1 25** in your library, choose **Properties**, and enter this in **Launch Options**:
+     ```
+     -nomoviestartup -windowed
+     ```
+4. **Turn off ray tracing.**
+   - In Finder, open `drive_c/users/crossover/Documents/My Games/F1 25/hardware_settings/` in your bottle.
+   - Open `hardware_settings_config.xml` in TextEdit.
+   - Set each of these to `false`: `rt_shadows`, `rt_reflections`, `rt_transparent_reflections`, `rt_ao`, `rt_ddgi`, `rt_pathtrace`, `rt_ray_reconstruction`.
+   - Save and close the file.
+5. **Clear stuck shader compiles.** Open Terminal and run:
+   ```bash
+   killall -9 MTLCompilerService
+   ```
+6. **Launch.**
+   - Turn off Wi-Fi on your Mac, so the game doesn't hang trying to reach EA's servers.
+   - Start F1 25, either through Steam in CrossOver or with **Launch F1 25** in the launcher.
+   - If a network prompt appears, press **Return** to continue to the main menu.
 
 ## Install
 
