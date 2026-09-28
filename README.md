@@ -67,11 +67,9 @@ Set this up once, before using the launcher. "The F1 25 folder" means the game's
 
 1. **Anti-cheat**
 
-   ◦ Download the bypass archive from OverTake: https://www.overtake.gg/downloads/f1-25-bypass-exe-mod.85207/
-   ◦ Extract the archive to retrieve bypass.exe.
-   ◦ In the F1 25 folder, rename EAAntiCheat.GameServiceLauncher.exe to EAAntiCheat.GameServiceLauncher.exe.bak.
-   ◦ Move bypass.exe into the F1 25 folder.
-   ◦ Rename bypass.exe to EAAntiCheat.GameServiceLauncher.exe.
+   - Download Reshade bypass for F1 25 from OverTake: [https://www.overtake.gg/downloads//](https://www.overtake.gg/downloads/reshade-bypass-for-f1-25.78274/)
+   - Extract the archive then run bypass.exe, you will then have 2 files bypass.exe and EAAntiCheat.GameServiceLauncher.exe
+   - Go the the F1 25 game directory in your steam files and paste these two files there and when it prompts you to replace them click replace
 
 2. **Stop the videos from freezing the game.** In the F1 25 folder, rename the `videos` folder to `videos_backup`.
 3. **Steam settings.**
